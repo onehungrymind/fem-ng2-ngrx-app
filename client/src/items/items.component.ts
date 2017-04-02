@@ -1,14 +1,14 @@
 import {Component} from '@angular/core';
 import {Observable} from "rxjs/Observable";
 import {Store} from '@ngrx/store';
-import {ItemsService} from '../common/services/items.service.ts';
+import {ItemsService} from '../common/services/items.service';
 import {AppStore} from '../common/models/appstore.model';
 import {Item} from '../common/models/item.model';
 import {ItemsList} from './items-list.component';
 import {ItemDetail} from './item-detail.component';
 
 import {Gadget} from '../common/models/gadget.model';
-import {GadgetService} from '../common/services/gadget.service.ts'
+import {GadgetService} from '../common/services/gadget.service';
 
 @Component({
   selector: 'items',
