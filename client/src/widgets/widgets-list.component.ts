@@ -1,5 +1,5 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
-import {Widget} from './../common/models/widget.model.ts';
+import {Widget} from './../common/models/widget.model';
 
 @Component({
     selector: 'widgets-list',

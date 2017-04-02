@@ -16,7 +16,7 @@ import {HttpModule} from '@angular/http';
 import {App} from './src/app';
 import {Items} from './src/items/items.component';
 import {Widgets} from './src/widgets/widgets.component';
-import {GadgetService} from "./src/common/services/gadget.service.ts";
+import {GadgetService} from "./src/common/services/gadget.service";
 import {routes} from './routes';
 
 @NgModule({
