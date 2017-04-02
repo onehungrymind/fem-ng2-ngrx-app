@@ -43,7 +43,7 @@ export class Items {
               private gadgetService: GadgetService,
               private store: Store<AppStore>) {
     this.items = itemsService.items;
-    this.selectedItem = store.select('selectedItem');
+    this.selectedItem = store.select<Item>('selectedItem');
     this.selectedItem.subscribe(v => console.log(v));
 
     this.gadget = gadgetService.gadget;

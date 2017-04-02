@@ -15,7 +15,7 @@ export class ItemsService {
   items: Observable<Array<Item>>;
 
   constructor(private http: Http, private store: Store<AppStore>) {
-    this.items = store.select('items');
+    this.items = store.select<Array<Item>>('items');
   }
 
   loadItems() {
